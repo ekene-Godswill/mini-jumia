@@ -74,9 +74,27 @@ function loadAllProduct(data){
     }
     output.innerHTML= content;
 }
+const handleLoginSuccessful = () =>{
+    let ul = document.querySelector('.account-ul');
+    if(localStorage.getItem('token')){
+        ul.children[0].style.display = 'none';
+        ul.children[1].style.display = 'none';
+    }
+    else{
+        ul.children[0].style.display = 'block';
+        ul.children[1].style.display = 'block';
+    }
+}
+
+const handleSignOut = () =>{
+    localStorage.clear();
+    alert('Logout Successfully');
+    handleLoginSuccessful();
+}
 window.onload = ()=>{
     getAllCategories();
     annimatedBanner();
     FetchAllProduct();
+    handleLoginSuccessful();
    
 }

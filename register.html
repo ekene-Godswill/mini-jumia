@@ -5,13 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link type="text/css" rel="stylesheet" href="./css/color.css"/>
     <link type="text/css" rel="stylesheet" href="./css/index.css"/>
-    <link type="text/css" rel="stylesheet" href="./css/header.css"/>
-    <link type="text/css" rel="stylesheet" href="./css/style.css"/>
-    <link type="text/css" rel="stylesheet" href="./css/bootstrapIcons/bootstrap-icons.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/color.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/index2.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/bootstrapIcons/bootstrap-icons.css" />
 </head>
 <body>
-    
+    <div class="div-body">
+        <form class="form-div" onsubmit="handleRegister(event)">
+            <div>Sign Up</div>
+            <div> Email</div>
+            <input type="email" name="email" required/>
+            <div>Username</div>
+            <input type="text" name="username" required/>
+            <div>Password</div>
+            <input type="password" name="password" required/>
+            <div>Confirm Password</div>
+            <input type="password" name="confirmPassword" required/>
+            <div>First Name</div>
+            <input type="text" name="firstname" required/>
+            <div>Last Name</div>
+            <input type="text" name="lastname" required/>
+            <div>City</div>
+            <input type="text" name="city" required/>
+            <div>Street</div>
+            <input type="text" name="street" required/>
+            <div>House Number</div>
+            <input type="text" name="number" required/>
+            <div>Zipcode</div>
+            <input type="text" name="zipcode" required/>
+            <div>Phone Number</div>
+            <input type="text" name="Phone" required/>
+            <button>Register</button>
+        </form>
+    </div>
+    <script src="/js/register.js"></script>
 </body>
 </html>

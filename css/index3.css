@@ -1,0 +1,36 @@
+.login-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background: center 0 no-repeat url(../images/TECNO.png);
+}
+.log-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+     border: 0px solid black;
+     width:300px;
+     background-color: white;
+     border-radius: 10px;
+     gap: 5px;
+     height: 200px;
+}
+.log-div > input{
+    cursor: pointer;
+    border-radius: 5px;
+}
+.log-div > button{
+    margin-top: 20px;
+    padding: 5px 30px;
+    background-color: black;
+    color: var(--white-color);
+    border-radius: 5px;
+}
+.log-div > button:hover{
+    cursor: pointer;
+    background-color:#0052ff ;
+}
+
